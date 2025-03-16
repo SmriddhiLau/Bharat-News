@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/ef2b5e0657.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="pop-up">
+        <button id="close">&times;</button>
+        <h2>Would you like to see the Gallery !</h2>
+        <p style="color: white;"> This is a showcase corner for news and journalism enthusiasts to look into the key features. The gallery is present at the footer of the website. </p>
+        <p style="color: white;">THANK YOU ! </p>
+        <p style="color: white;"> The gallery is present at the footer of the website. </p>
+        <a href="#Gallary" > Click Here !!</a>
+    </div>
+
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company-logo">
+                <img src="My project.png" alt="complany logo">
+            </a>
+            <div class="nav-links ">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="Sports" onclick="onNavItemClick('Sports')">Sports </li>
+                    <li class="hover-link nav-item" id="Finance" onclick="onNavItemClick('Finance')">Finance</li>
+                    <li class="hover-link nav-item" id="Technology" onclick="onNavItemClick('Technology')">Technology</li>
+                    <li class="hover-link nav-item" id="Weather" onclick="onNavItemClick('Weather')">Weather</li>
+                    <li><a href="mini_project.html" target="_blank" class="hover-link nav-item" style="color: #183b56;">Sign In</a></li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g. Technology">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content" >
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End gadget 08/08/2023</h6>
+                <p class="news-description" id="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci suscipit modi quas praesentium sequi ducimus dolore exercitationem soluta architecto eaque?</p>
+            </div>
+        </div>
+    </template>
+
+    <footer class="container">
+        
+    <h2>FAQ's</h2>
+
+    <div class="accordian">
+        <div class="question">
+            <h4>How To Become a TV News Anchor</h4>
+            <i class="icon fa-solid fa-caret-down"></i>
+        </div>
+        <div class="answer">
+            <p>You can pursue a career as a news anchor by earning a bachelor's degree in journalism, gaining entry-level experience in broadcast news and preparing a resume tape that showcases your anchoring capabilities.</p>
+        </div>
+    </div>
+
+    <div class="accordian">
+        <div class="question ">
+            <h4>What is Newsmedia?</h4>
+            <i class="icon fa-solid fa-caret-down"></i>
+        </div>
+        <div class="answer">
+            <p>The news media are those elements of the mass media that focus on delivering news to the general public or a target public. These include print media (newspapers, newsmagazines), broadcast news (radio and television), and more recently the Internet (online newspapers, news blogs, Social Media etc.).</p>
+        </div>
+    </div>
+
+    <div class="accordian">
+        <div class="question">
+            <h4>What is Mass media?</h4>
+            <i class="icon  fa-solid fa-caret-down"></i>
+        </div>
+        <div class="answer ">
+            <p>Mass media are the means through which information is transmitted to a large audience. This includes newspapers, television, radio, and more recently the Internet. Those who provide news and information, and the outlets for which they work, are known as the news media.</p>
+        </div>
+    </div>
+
+    <div class="accordian">
+        <div class="question">
+            <h4>If I view the same article multiple times, does that count toward my free articles for the month?</h4>
+            <i class="icon fa-solid fa-caret-down"></i>
+        </div>
+        <div class="answer">
+            <p>No, views are counted by unique articles viewed. The number of times the same article is viewed (within 30 minutes) does not count toward viewing total.</p>
+        </div>
+    </div>
+
+    <div class="accordian">
+        <div class="question">
+            <h4>How can I request to upgrade my monthly News from Science subscription to an annual subscription?</h4>
+            <i class="icon fa-solid fa-caret-down"></i>
+        </div>
+        <div class="answer">
+            <p>To request an upgrade from a monthly News from Science subscription to an annual subscription ($25/year), please contact our Support team by email at site email Annual subscriptions to News from Science will auto-renew each year after your initial purchase and payments are non-refundable after 30 days of purchase or most recent bill.</p>
+        </div>
+    </div>
+
+    <div class="accordian">
+        <div class="question">
+            <h4>What is Digital Subscription</h4>
+            <i class="icon fa-solid fa-caret-down"></i>
+        </div>
+        <div class="answer">
+            <p>A digital subscription to The Hindu will provide you access to premium features such as personalised article recommendations, quick briefings on the day's news, ability to bookmark articles for later reading, and more.</p>
+        </div>
+    </div>
+
+        </div>
+    </footer>
+    <hr>
+
+    <div class="subfooter">
+        <div class="container flex sub-footer-container">
+            <a href="portfolio_gallery.html" target="_blank" class="footer-link" id="Gallary">Gallery</a>
+            <a href="#" class="footer-link">Privacy policy</a>
+            <a href="#" class="footer-link">Terms & Conditiond</a>
+            <a href="#" class="footer-link">Security Information</a>
+            <a href="#" class="footer-link"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="footer-link"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+    <script src="animated_faq.js"></script>
+</body>
+</html>
